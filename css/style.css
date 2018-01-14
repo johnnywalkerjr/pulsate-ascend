@@ -1,0 +1,890 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/ProximaNova-Regular-webfont.eot');
+    src: url('../fonts/ProximaNova-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Regular-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/ProximaNova-Bold-webfont.eot');
+    src: url('../fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Bold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/ProximaNova-Light-webfont.eot');
+    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Light-webfont.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Light-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{ 
+	margin:0;
+	padding:0;
+}
+
+
+p {
+	font-size: 16px;
+	color:#6e6e6e;
+	line-height: 1.3;
+	font-family: 'proxima_nova_rgregular';
+}
+
+.new-btn {
+  background: #cc0000;
+}
+
+/* work section */
+
+.workSection-bg {
+background-image: url('../images/bck-banner.jpg'); 
+background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+ height:100%;
+}
+
+.workSection h2{
+text-align: center;
+font-size: 40px;
+padding-top:50px;
+font-family: 'proxima_novalight';
+}
+
+.workSection h2 span{
+font-family: 'proxima_nova_rgbold';
+}
+
+.workSection h5{
+text-align: center;
+padding-bottom:50px;
+font-family: 'proxima_novalight';
+font-size: 18px;
+font-weight: 800;
+}
+
+.workSection img{
+margin: auto;
+}
+
+.workDesc {
+background:#38c2f1;
+height: 130px;
+text-align: center;
+max-width:355px;
+margin: 0px auto 100px;	
+}
+
+.workDesc p{
+color: #fff;
+padding:15px;
+
+}
+
+/* home top section */
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+  height: 3px;
+  margin-bottom:4px;
+}
+
+.navbar-brand {
+width:250px;
+height:50px;
+padding:0;
+margin: 0;
+background: url('../images/logo.png') no-repeat;
+text-indent: -9999px;
+}
+
+
+.navbar-default {
+background:none;
+border:none;
+padding:0 0 50px 0;
+text-align: center;
+}
+
+.navbar-default .navbar-nav li a {
+font-family: 'proxima_nova_rgregular';  
+color: #fff;
+font-weight: 600;
+text-decoration: none;
+padding-right: 15px;
+padding-left: 15px;
+font-weight: 400;
+font-size: 18px;
+
+}
+
+
+.navbar-default .navbar-nav li a:hover {
+color: #38c2f1;
+text-decoration: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-default .navbar-nav li a:active {
+color: #fff;
+text-decoration: none;
+}
+
+.navbar-default .navbar-nav .active a {
+background: none; /* change later if using RoR */
+color: #fff;
+}
+
+.navbar-default .navbar-nav .active a:hover {
+color: #38c2f1;
+text-decoration: none;
+background: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-default .navbar-nav li a:focus {
+	color:#38c2f1;
+	background: none;
+}
+
+
+.navbar-toggle {
+border:none;
+margin-top:5px;
+margin-right:0;
+width:40px;
+height:40px;
+text-align: center;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+background: none;
+outline: none;
+}
+
+.navbar-default .navbar-collapse { /*change the transparency of nav when collapsed */
+border:none;
+background: rgba(255,255,255,0.2);
+border-radius:4px;
+box-shadow: none;
+}
+
+
+.jumbotron-home {
+background: 
+    linear-gradient(
+      rgba(102, 102, 102, 0.3), 
+      rgba(102, 102, 102, 0.3)),
+      url('../images/bck1.jpg') no-repeat;
+margin: 0px;
+padding:50px 0;
+min-height: 800px;
+background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron-home h1{
+padding:25px 15px;
+font-size: 36px;
+color: #fff;
+font-weight: 300;
+margin:150px 0 30px 0;
+font-family: 'proxima_novalight';
+}
+
+.jumbotron-home h1 span{
+font-size: 36px;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+font-family: 'proxima_nova_rgbold';
+}
+
+.jumbotron-home h5{
+font-size: 20px;
+padding:0px 15px;
+line-height: 25px;
+font-weight: normal;
+color: #fff;
+margin:-15px 0 50px 0;
+font-family: 'proxima_novalight';
+}
+
+
+.bannerBtns {
+margin-bottom: 100px;
+}
+
+
+
+
+/* media bar */
+
+.mediabarWrapper {
+background: #38c2f1;
+padding: 75px 0px;
+}
+
+.mediabarWrapper img {
+margin: auto;
+padding-bottom: 25px;
+}
+
+
+
+/*case study */
+
+.csWrapper{
+padding:50px 0px;
+}
+
+.csWrapper img{
+padding-top:20px;
+}
+
+.casestudy {
+background: #38c2f1;
+}
+
+.divider {
+background: #fff;
+width: 150px;
+height: 2px;
+margin:25px 0px;
+}
+
+
+.casestudy h3 span{
+font-family: 'proxima_nova_rgbold';	
+}
+
+.casestudy h3{
+color: #fff;
+max-width: 600px;
+font-family: 'proxima_novalight';
+}
+
+.casestudy p{
+color: #fff;
+max-width: 600px;
+}
+
+.btn-wired {
+margin-top: 25px;
+color: #FFF;
+text-align: center;
+font-size: 20px;
+background: #38c2f1;
+border-radius: 5px;
+padding: 10px 22px;
+border: 2px solid #fff;
+margin-bottom:25px;
+}
+
+
+
+.btn-wired:hover {
+color: #fff;
+text-align:center;
+font-size:20px;
+background: rgba(255,255,255,0.1);
+border-radius: 5px;
+padding: 10px 22px;
+text-decoration: none;
+border: 2px solid #fff;
+margin-bottom:25px;
+	-webkit-transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
+}
+
+
+.btn-wired:focus {
+outline:0;
+}
+
+
+/*features */
+
+.media-body {
+	max-width: 300px;
+}
+
+.featureWrapper {
+	padding:100px 0px 50px;
+}
+
+.feature-box {
+	padding-bottom:50px;
+}
+
+.media-body h3{
+	padding-bottom:25px;
+	font-family: 'proxima_nova_rgbold';
+	font-weight: 200;
+}
+
+.featureWrapper img {
+	padding-top:50px;
+}
+
+
+/* cta bar */
+
+.ctaWrapper {
+background: #3d3d3d;
+padding: 50px 0px 25px;
+}
+
+.cta {
+text-align: center;
+}
+
+.btn-schedule{
+color: #FFF;
+text-align: center;
+font-size: 16px;
+background: #ff8900;
+border-radius: 5px;
+padding: 10px 22px;
+border: 2px solid #ff8900;
+margin-bottom:25px;
+margin-right:12px;
+text-transform: uppercase;
+}
+
+.btn-schedule:focus {
+outline:0;
+}
+
+
+.btn-schedule:hover{
+color: #FFF;
+text-align:center;
+font-size:16px;
+background: #ce6f00;
+border-radius: 5px;
+padding: 10px 22px;
+text-decoration: none;
+border: 2px solid #fff;
+margin-bottom:25px;
+	-webkit-transition: all 0.3s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
+}
+
+.btn-callus{
+color: #FFF;
+text-align: center;
+font-size: 16px;
+background: none;
+border-radius: 5px;
+padding: 10px 30px;
+border: 2px solid #FFF;
+margin-bottom:25px;
+margin-left:12px;
+text-transform: uppercase;
+}
+
+.btn-callus:hover{
+text-align:center;
+color: #fff;
+font-size:16px;
+background: none;
+border-radius: 5px;
+padding: 10px 30px;
+text-decoration: none;
+border: 2px solid #fff;
+margin-bottom:25px;
+}
+
+.btn-callus:focus{
+  outline:0;
+}
+
+.btn-learn{
+color: #FFF;
+text-align: center;
+font-size: 16px;
+background: none;
+border-radius: 5px;
+padding: 10px 30px;
+border: 2px solid #FFF;
+margin-bottom:25px;
+text-transform: uppercase;
+}
+
+
+.btn-learn:hover{
+text-align:center;
+color: #fff;
+font-size:16px;
+background: none;
+border-radius: 5px;
+text-decoration: none;
+border: 2px solid #fff;
+margin-bottom:25px;
+background: rgba(255,255,255,0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.or{
+position: relative;
+top:-10px;
+font-size: 20px;
+color: #fff;
+padding:0px 20px;
+margin-bottom:100px;
+}
+
+
+
+
+
+/* casestudy page */
+
+.jumbotron-casestudy {
+background:
+      linear-gradient(
+      rgba(102, 102, 102, 0.3), 
+      rgba(102, 102, 102, 0.3)),
+      url('../images/bck5.jpg') no-repeat;
+margin: 0px;
+padding:50px 0;
+min-height: 800px;
+background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+.jumbotron-casestudy h1{
+padding:25px 15px;
+font-size: 36px;
+color: #fff;
+font-weight: 300;
+margin:150px 0 30px 0;
+font-family: 'proxima_novalight';
+line-height: 45px;
+}
+
+.jumbotron-casestudy h1 span{
+font-size: 36px;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+font-family: 'proxima_nova_rgbold';
+}
+
+
+.casestudyExplainer {
+  background: #38c2f1;
+  margin: 0 auto;
+
+}
+
+.casestudyExplainer img {
+  margin: 0 auto;
+}
+
+.casestudyExplainer .divider {
+  margin: 25px auto;
+}
+
+.casestudyExplainer h3 span{
+font-family: 'proxima_nova_rgbold';
+margin: 0 auto; 
+}
+
+.casestudyExplainer h3{
+color: #fff;
+max-width: 600px;
+font-family: 'proxima_novalight';
+margin: 0 auto;
+}
+
+.casestudyExplainer p{
+color: #fff;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.casestudyStats img{
+margin: 0 auto;
+padding:50px 0 25px 0;
+}
+
+.casestudyStats .resultLeft {
+  float: right;
+}
+
+.casestudyStats .resultRight {
+  float: left;
+}
+
+
+.casestudyWrapper{
+padding-top:50px;
+padding-bottom:50px;
+}
+
+.casestudyWrapper img{
+padding-top:20px;
+padding-left:50px;
+}
+
+.casestudyContent-wrap{
+max-width: 800px;
+padding-bottom:100px;
+}
+
+
+.casestudyContent h3 {
+  text-indent: 15px;
+  padding-bottom:25px;
+  font-family: 'proxima_novalight';
+  font-weight: 400;
+}
+
+.casestudyContent h3::before {
+  content: " - ";
+  color: #38c2f1;
+  font-weight: 800;
+}
+
+.casestudyContent h2 {
+padding-bottom:25px;
+font-family: 'proxima_novalight';
+
+}
+
+.casestudyContent h2 span {
+  font-family: 'proxima_nova_rgbold';
+}
+
+
+.casestudyContent p {
+  padding-bottom:15px;
+}
+
+
+
+
+
+
+
+
+/* revenue page */
+
+.jumbotron-revenue {
+background:
+      linear-gradient(
+      rgba(102, 102, 102, 0.3), 
+      rgba(102, 102, 102, 0.3)),
+      url('../images/bck2.jpg') no-repeat;
+margin: 0px;
+padding:50px 0;
+min-height: 800px;
+background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+.jumbotron-revenue h1{
+padding:25px 15px;
+font-size: 36px;
+color: #fff;
+font-weight: 300;
+margin:150px 0 30px 0;
+font-family: 'proxima_novalight';
+line-height: 45px;
+}
+
+.jumbotron-revenue h1 span{
+font-size: 36px;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+font-family: 'proxima_nova_rgbold';
+}
+
+.revenuesContent img {
+  padding-top:25px;
+}
+
+.revenuesContent h3{
+  padding-bottom:25px;
+  font-family: 'proxima_nova_rgbold';
+  font-weight: 400;
+}
+
+.revenuesContent p span{
+  font-family: 'proxima_nova_rgbold';
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+.revenuesContent .revenueSpacing{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.revenueHow {
+  margin-bottom:100px;
+}
+
+.revenueHow h2{
+text-align: center;
+font-size: 40px;
+padding:50px 0;
+font-family: 'proxima_novalight';
+}
+
+.revenueHow h2 span{
+font-family: 'proxima_nova_rgbold';
+}
+
+.revenueHow h3{
+  padding:0 0 25px;
+}
+
+.revenueHowWrapper img{ 
+padding-top:25px;
+margin: 0 auto;
+}
+
+.revenueHowWrapper {
+  padding-bottom:25px;
+  min-height: 200px;
+}
+
+.revenueHowWrapper p{
+max-width: 600px;
+}
+
+
+
+
+
+/* relationship page */
+
+.jumbotron-relationship {
+background:
+      linear-gradient(
+      rgba(102, 102, 102, 0.3), 
+      rgba(102, 102, 102, 0.3)),
+      url('../images/bck3.jpg') no-repeat;
+margin: 0px;
+padding:50px 0;
+min-height: 800px;
+background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+.jumbotron-relationship h1{
+padding:25px 15px;
+font-size: 36px;
+color: #fff;
+font-weight: 300;
+margin:150px 0 30px 0;
+font-family: 'proxima_novalight';
+line-height:45px;
+}
+
+.jumbotron-relationship h1 span{
+font-size: 36px;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+font-family: 'proxima_nova_rgbold';
+}
+
+
+/*results page */
+
+.jumbotron-results {
+background:
+      linear-gradient(
+      rgba(102, 102, 102, 0.3), 
+      rgba(102, 102, 102, 0.3)),
+url('../images/bck4.jpg') no-repeat;
+margin: 0px;
+padding:50px 0;
+min-height: 800px;
+background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+.jumbotron-results h1{
+padding:25px 15px;
+font-size: 36px;
+color: #fff;
+font-weight: 300;
+margin:150px 0 30px 0;
+font-family: 'proxima_novalight';
+line-height: 45px;
+}
+
+.jumbotron-results h1 span{
+font-size: 36px;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+font-family: 'proxima_nova_rgbold';
+}
+
+
+.resultsList {
+padding-top:100px;
+}
+
+
+.resultsList ol li{
+color: #fff;
+font-family: 'proxima_novalight';
+font-size: 20px;
+line-height: 35px;
+}
+
+.resultsList ol li span{
+font-family: 'proxima_nova_rgbold';
+font-weight: 200;
+}
+
+
+.resultsPerformance {
+padding-bottom:100px;
+text-align: center;
+background: #f4f4f4;
+}
+
+.resultsPerformance h2{
+text-align: center;
+font-size: 40px;
+padding:70px 0 15px 0;
+margin-top:0px;
+font-family: 'proxima_novalight';
+}
+
+.resultsPerformance h2 span{
+font-family: 'proxima_nova_rgbold';
+}
+
+.resultsPerformance img {
+  margin: 0 auto;
+  padding-bottom:25px;
+}
+
+.resultsDivider{
+background: #e2e2e2;
+width: 150px;
+height: 2px;
+margin: 100px auto 25px auto;
+
+}
+
+/* footer */
+
+footer {
+  padding: 50px 0px 100px;
+  background: #303030;
+  color: #adadad;
+  overflow: hidden;
+  background-image: url('../images/footer.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height:100%;
+}
+
+footer h4{
+  padding-top:50px;
+}
+
+footer img{
+  padding-top:50px;
+}
+
+
+
+
+
+/* resposnive nav bar */
+
+@media(min-width:768px){
+	.navbar-default .navbar-collapse {background: none;}
+	.navbar-default .navbar-nav {float:right;}
+}
+
+/* mobile revenue page */
+@media(max-width:480px){
+.navbar-default{padding: 0 0 15px;}
+.btn-learn{padding: 10px 10px;}
+.casestudy {text-align: center;}
+.casestudy img{margin:0 auto; padding-left:50px;}
+.casestudyExplainer p{margin:0 15px;}
+.divider {margin-right:auto; margin-left:auto;}
+.or{display: none;}
+.revenueHow .revenueHowWrapper img {margin-bottom:50px;}
+.revenueHow {text-align: center;}
+.btn-callus {margin-left:0px; margin-top:15px;}
+.btn-schedule {margin-right:0px;}
+.jumbotron-home h1{margin:0px 0 30px; line-height:35px;}
+.jumbotron-results h1{margin:0px 0 30px; line-height:35px;}
+.jumbotron-relationship h1{margin:0px 0 30px; line-height:35px;}
+.jumbotron-relationship h1{margin:0px 0 30px; line-height:35px;}
+.jumbotron-revenue h1{margin:0px 0 30px; line-height:35px;}
+}
